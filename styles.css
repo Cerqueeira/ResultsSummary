@@ -1,0 +1,258 @@
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  --lightslateblue-bg: hsl(252, 100%, 67%);
+  --lightroyalblue-bg: hsl(241, 81%, 54%);
+  --violetblue-circle: hsla(256, 72%, 46%, 1);
+  --persianblue-circle: hsla(241, 72%, 46%, 0);
+
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --darkgray-blue: hsl(224, 30%, 27%);
+
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(221, 100%, 96%, 0.5);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  display: flex;
+}
+
+p {
+  font-size: 18px;
+}
+
+h2 {
+  padding-bottom: 2rem;
+}
+
+h2,
+p {
+  color: var(--light-lavender);
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.result {
+  padding: 30px;
+  width: 350px;
+  border-radius: 20px;
+  background: linear-gradient(
+    var(--lightslateblue-bg),
+    var(--lightroyalblue-bg)
+  );
+}
+
+.circle {
+  margin: auto;
+  padding: 30px;
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(
+    var(--violetblue-circle),
+    var(--persianblue-circle)
+  );
+
+  display: flex;
+  flex-direction: column;
+}
+
+.score {
+  font-weight: 800;
+  font-size: 70px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.result1 {
+  padding-top: 2rem;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.score,
+.result1 {
+  color: var(--white);
+}
+
+div > p:nth-child(2) {
+  color: hsl(221, 100%, 96%, 0.4);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.result2 {
+  padding: 25px;
+  width: 350px;
+  border-radius: 20px;
+  background: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.result,
+.result2 {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.darkfont {
+  color: var(--darkgray-blue);
+  text-align: left;
+  font-weight: 800;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.stats {
+  margin: 5px;
+  padding: 20px;
+  border-radius: 5px;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+}
+
+.flex1 {
+  display: flex;
+  align-items: center;
+}
+
+.skill1 {
+  color: var(--light-red);
+  padding-left: 0.5rem;
+  font-weight: 700;
+}
+
+.skill2 {
+  color: var(--orangey-yellow);
+  padding-left: 0.5rem;
+  font-weight: 700;
+}
+
+.skill3 {
+  color: var(--green-teal);
+  padding-left: 0.5rem;
+  font-weight: 700;
+}
+
+.skill4 {
+  color: var(--cobalt-blue);
+  padding-left: 0.5rem;
+  font-weight: 700;
+}
+
+.stats:first-of-type {
+  background-color: hsla(0, 100%, 67%, 0.07);
+}
+
+.stats:nth-of-type(2) {
+  background-color: hsla(39, 100%, 56%, 0.07);
+}
+
+.stats:nth-of-type(3) {
+  background-color: hsla(166, 100%, 37%, 0.07);
+}
+
+.stats:nth-of-type(4) {
+  background-color: hsla(234, 85%, 45%, 0.07);
+}
+
+.continue1 {
+  margin: 5px;
+  padding: 15px;
+  border-radius: 9999px;
+  background: var(--darkgray-blue);
+
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.continue1 p {
+  margin: auto;
+  color: var(--white);
+}
+
+.lala > span:first-of-type {
+  color: var(--darkgray-blue);
+  font-weight: 800;
+  font-size: 18px;
+  padding-left: 81px;
+}
+
+.pad1 {
+  padding-left: 5px;
+}
+
+.pad2 {
+  padding-left: 20px;
+}
+
+.lala > span:nth-of-type(2) {
+  color: hsl(224, 30%, 27%, 0.6);
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.desc {
+  padding: 15px;
+}
+
+.continue1:hover {
+  background: linear-gradient(
+    var(--lightslateblue-bg),
+    var(--lightroyalblue-bg)
+  );
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 700px) {
+  body {
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
